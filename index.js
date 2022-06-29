@@ -1,4 +1,4 @@
-console.log("hello world!");
+console.log("hello world!こんにちは、Ether.jsの勉強をしています");
 console.log("こんにちは、Ether.jsの勉強をしています");
 
 <button type="button"
