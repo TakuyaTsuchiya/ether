@@ -17,7 +17,7 @@ async function myFunction2() {
 async function myFunction3() {
     const provider = await new ethers.providers.Web3Provider(window.ethereum)
     const balance = await provider.getBalance("ethers.eth")
-    alert(balance);
+    alert(ethers.utils.formatEther(balance));
 }
 
 window.onload = async function() {
