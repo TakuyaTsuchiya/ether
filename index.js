@@ -14,9 +14,16 @@ async function myFunction2() {
   alert(addresses[0]);
 }  
 
+async function myFunction3() {
+    const provider = await new ethers.providers.Web3Provider(window.ethereum)
+    const balance = await provider.getBalance("ethers.eth")
+    alert(balance);
+}
+
 window.onload = async function() {
   myFunction();
   myFunction2();
+  myFunction3();
 }
 
 
